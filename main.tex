@@ -1,0 +1,16 @@
+\documentclass{paper}
+\usepackage{import}
+
+\newcommand{\structure}[1]{
+	\subimport{#1/}{document}
+}
+
+\begin{document}
+\label{main}
+
+error when \ref{p1label}
+
+no error when \ref{p2label} and \ref{sp2label}
+
+\input{structure.tex}
+\end{document}
