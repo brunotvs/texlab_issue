@@ -1,5 +1,8 @@
 \documentclass{paper}
 \usepackage{import}
+\usepackage{biblatex}
+
+\addbibresource{references.bib}
 
 \newcommand{\structure}[1]{
 	\subimport{#1/}{document}
@@ -12,5 +15,8 @@ error when \ref{p1label}
 
 no error when \ref{p2label} and \ref{sp2label}
 
+
 \input{structure.tex}
+
+\printbibliography
 \end{document}
